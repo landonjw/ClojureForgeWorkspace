@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "clojuretestmod",
+    "name": "ClojureTestMod",
+    "description": "",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "landonjw"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
