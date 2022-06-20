@@ -52,6 +52,7 @@ repositories {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
+    implementation 'nrepl:nrepl:0.8.3'
     implementation 'org.clojure:clojure:1.10.1'
     implementation 'org.clojure:spec.alpha:0.2.176'
     implementation 'org.clojure:core.specs.alpha:0.2.44'
@@ -60,9 +61,8 @@ dependencies {
 
 clojure {
     builds {
-        // Defaults noted here are for custom builds, the convention plugin configures the builds it adds differently
         main {
-            aotAll() // aots any namespaces found in the source set
+            aotAll()
         }
     }
 }
@@ -73,6 +73,7 @@ shadowJar {
         include(dependency('org.clojure:clojure:.*'))
         include(dependency('org.clojure:spec.alpha:.*'))
         include(dependency('org.clojure:core.specs.alpha:.*'))
+        include(dependency('nrepl:nrepl:.*'))
     }
 }
 
